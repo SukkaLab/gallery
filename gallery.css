@@ -1,0 +1,114 @@
+body {
+    background: #2d2e31
+}
+
+.gallery-thumb {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    display: block;
+    cursor: pointer;
+    outline: 0px;
+    top: 0;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    height: 100%;
+    width: 100%;
+}
+
+.gallery-card {
+    min-height: 20rem;
+    height: calc(40vh - 2em);
+    overflow: hidden;
+    position: relative;
+    border: none;
+    border-color: transparent;
+    background: #2d2e31
+}
+
+.gallery-cover {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    background: rgba(0, 0, 0, .3);
+    padding: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0
+}
+
+.gallery-title {
+    text-shadow: .15rem .15rem .55rem #333;
+    color: #eee;
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+.gallery-subtitle {
+    text-shadow: .1rem .1rem .5rem #444;
+    color: #ddd;
+    font-size: .75rem;
+    font-weight: 500;
+    overflow: hidden;
+    max-height: 1rem;
+}
+
+.gallery-modal-body {
+    min-width: 150px;
+    min-height: 150px;
+    max-width: 80vw;
+    max-height: 80vh;
+    background: transparent;
+}
+
+.modal.active .modal-overlay,
+.modal:target .modal-overlay {
+    background: rgba(0, 0, 0, .6);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+}
+
+.modal-container .modal-body {
+    padding: 0;
+    overflow-y: unset;
+}
+
+.modal-container {
+    padding: 0
+}
+
+.gallery-modal-body img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    margin: 0 auto;
+    box-shadow: 0 1em 3em 0.5em rgba(0, 0, 0, .25);
+}
+
+.gallery-pic {
+    text-indent: 0px;
+}
+
+.gallery-pic-text {
+    padding: 2em 2em .1em;
+    background-image: linear-gradient(to top,rgba(16,16,16,.45) 25%,rgba(16,16,16,0) 100%);
+    bottom: 0;
+    cursor: default;
+    left: 0;
+    position: absolute;
+    text-align: left;
+    width: 100%;
+    z-index: 2;
+}
